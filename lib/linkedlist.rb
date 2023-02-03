@@ -5,6 +5,10 @@ class LinkedList
     @head = nil
   end
 
+  def append(noise)
+    "doop"
+  end
+
 
 
 end
