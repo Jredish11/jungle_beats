@@ -7,5 +7,9 @@ class Node
   def data
     @sound
   end
+
+  def next_node
+    nil
+  end
 end
 
