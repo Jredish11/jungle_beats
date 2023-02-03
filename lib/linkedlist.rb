@@ -1,15 +1,24 @@
 class LinkedList
 
-  attr_reader :head, :data, :next_node
+  attr_accessor :head, :data, :sound
   def initialize
     @head = nil
-    @data = "doop"
-    @next_node = nil
+   
+
   end
 
-  def append(noise)
-    @data
+  def append(data)
+    @head = Node.new(data) #creat node object
+   
+    
+    
+    # if @head.nil? 
+    #   @head == new_node #set node head
+    # else
+    #   current = @home #et current node
+    # end
   end
 
-
+  def count
+  end
 end
