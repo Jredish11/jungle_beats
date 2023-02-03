@@ -8,7 +8,7 @@ class LinkedList
   end
 
   def append(noise)
-    "doop"
+    @data
   end
 
 
