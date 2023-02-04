@@ -3,26 +3,23 @@ class LinkedList
   attr_accessor :head, :data, :sound
   def initialize
     @head = nil
-
-   
-
   end
 
   def append(data)
     @head = Node.new(data) #creat node object
+  end
+
    
     
     
-    # if @head.nil? 
-    #   @head == new_node #set node head
-    # else
-    #   current = @home #et current node
-    # end
-  end
+  
+
 
   def count
     @count = 1
   end
 
- 
+  def to_string
+    @head.data
+  end
 end
