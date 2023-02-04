@@ -3,6 +3,7 @@ class LinkedList
   attr_accessor :head, :data, :sound
   def initialize
     @head = nil
+
    
 
   end
@@ -20,5 +21,8 @@ class LinkedList
   end
 
   def count
+    @count = 1
   end
+
+ 
 end
