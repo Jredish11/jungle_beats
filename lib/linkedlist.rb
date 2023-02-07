@@ -50,28 +50,36 @@ class LinkedList
     end
   end
 
-  def prepend(data)
+  def prepend(data) #throws data at beginning of list
     new_node = Node.new(data) #method called creates new node with given data
     new_node.next_node = @head #set next node of new node to the current head
     @head = new_node #so head is now the new node
   end
 
   def insert(index, data)
-    if index == 0 
+    if index == 0 #if position in list is = 0 add data at beginning to start list.
       prepend(data)
     else
-      current_node = @head
+      current_node = @head 
       current_index = 1
-      until index -- 1
+      until current_index == current_index
         current_node = current_node.next_node
-        current_node.nil? 
+       append(data) if current_node.nil?
         current_index += 1
       end
       new_node = Node.new(data)
       new_node.next_node = current_node.next_node
       current_node.next_node = new_node
-    
     end
+  end
+
+  def find(position, elements)
+    results_string = results_string + " " + current_node.data
+
+    
+
+
+
   end
 end
 
