@@ -75,11 +75,6 @@ class LinkedList
 
   def find(position, elements)
     results_string = results_string + " " + current_node.data
-
-    
-
-
-
   end
 end
 
